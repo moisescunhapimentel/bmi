@@ -59,13 +59,20 @@ class _HomeViewState extends State<HomeView> {
                 child: CustomElevatedButton.elevatedButtonText(
                     backgroundColor: kPrimaryColor,
                     text: 'BMI Calculation',
+                    fontSize: SizeConfig.defaultSize * 2,
                     function: homeController.toggleCalculation),
+              ),
+              SizedBox(
+                height: SizeConfig.defaultSize,
               ),
               Center(
                 child: CustomElevatedButton.elevatedButtonText(
                     backgroundColor: Colors.white,
-                    textStyle: TextStyle(color: kSecondaryColor),
-                    side: BorderSide(color: kSecondaryColor),
+                    side: BorderSide(color: kSecondaryColor, width: 1.5),
+                    textStyle: TextStyle(
+                        color: kSecondaryColor,
+                        fontSize: SizeConfig.defaultSize * 2,
+                        fontWeight: FontWeight.bold),
                     text: 'Dough Table',
                     function: homeController.toggleTable),
               ),

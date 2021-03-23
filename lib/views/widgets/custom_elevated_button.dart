@@ -5,20 +5,24 @@ class CustomElevatedButton {
       {TextStyle textStyle,
       Color backgroundColor,
       @required String text,
+      double fontSize,
       BorderSide side,
       @required void function()}) {
     return ElevatedButton(
       onPressed: function,
-      child: Text(
-        text,
-        style: textStyle ??
-            TextStyle(fontWeight: FontWeight.bold),
+      child: Container(
+        padding: EdgeInsets.all(10),
+        child: Text(
+          text,
+          style: textStyle ??
+              TextStyle(fontWeight: FontWeight.bold, fontSize: fontSize),
+        ),
       ),
       style: ElevatedButton.styleFrom(
           primary: backgroundColor,
           shape: RoundedRectangleBorder(
               side: side ?? BorderSide.none,
-              borderRadius: BorderRadius.circular(20))),
+              borderRadius: BorderRadius.circular(50))),
     );
   }
 

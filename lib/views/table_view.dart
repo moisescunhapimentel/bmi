@@ -73,8 +73,8 @@ class _TableViewState extends State<TableView> {
                       List<String> keys = bmiTable.keys.toList();
                       return Container(
                         color: item % 2 == 0
-                            ? kPrimaryColor.withOpacity(0.3)
-                            : kPrimaryColor.withOpacity(0.7),
+                            ? kSecondaryColor.withOpacity(0.5)
+                            : kPrimaryColor.withOpacity(0.9),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -122,7 +122,7 @@ class _TableViewState extends State<TableView> {
                                   textAlign: TextAlign.start,
                                   style: TextStyle(
                                     fontSize: SizeConfig.defaultSize * 1.5,
-                                  ),
+                                   ),
                                 ),
                               ),
                             ),

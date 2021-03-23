@@ -1,16 +1,54 @@
-# bmi
+<h1 align="center">BMI</h1>
 
-A new Flutter application.
+<h2 align="center">Flutter application BMI (Body Mass Index)</h2>
 
-## Getting Started
+## Technologies
 
-This project is a starting point for a Flutter application.
+- [Flutter](https://flutter.dev)
 
-A few resources to get you started if this is your first Flutter project:
+## [Pub dev](https://pub.dev/) libraries
+- [mobx](https://pub.dev/packages/mobx)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [flutter_mobx](https://pub.dev/packages/flutter_mobx)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [mobx_codegen](https://pub.dev/packages/mobx_codegen)
+
+- [build_runner](https://pub.dev/packages/build_runner)
+
+## Features
+
+This project involves a simple responsive application in the calculation of BMI and its table. Mobx was used in its construction. I am aware that 'setState' would be sufficient and there was no need to use such a powerful state manager for something so simple, but here is an example that even in simple tasks it is a powerful tool. The application was run on an Android device and on the Web (Chrome) in order to test its responsiveness.
+
+## Run App
+
+<hr>
+<h3>Android</h3>
+<hr>
+
+<div align="center">  
+<img src="images/cell/bmi.gif">
+<hr>
+
+<div align="left">
+
+### Web
+
+</div>
+<hr>
+
+<div align="center">  
+<img src="images/web/bmi.gif">
+</div>
+
+<div align="left">
+
+### Author
+Moisés Cunha
+</div>
+
+<div align="left">
+
+### Contact
+Email: moisescunhapimentel@gmail.com
+
+</div>

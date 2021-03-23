@@ -7,6 +7,7 @@ class CustomAppBar {
     @required double height,
     @required Color color,
     @required String text,
+    @required double fontSize,
     @required void onPressed(),
   }) {
     return Container(
@@ -34,7 +35,7 @@ class CustomAppBar {
               style: TextStyle(
                 fontFamily: 'Poppins',
                 color: Colors.white,
-                fontSize: 25,
+                fontSize: fontSize,
               ),
               textAlign: TextAlign.center,
             ),

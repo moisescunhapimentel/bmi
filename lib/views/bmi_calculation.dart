@@ -41,11 +41,15 @@ class _BMIViewState extends State<BMIView> {
                 height: SizeConfig.defaultSize * 6,
                 color: kPrimaryColor,
                 text: 'Body Mass Index',
+                fontSize: SizeConfig.defaultSize * 2,
                 onPressed: () => Navigator.pop(context),
               ),
             ),
             Container(
-              padding: EdgeInsets.only(top: 10, left: 20, right: 20),
+              padding: EdgeInsets.only(
+                  top: SizeConfig.defaultSize * 2,
+                  left: SizeConfig.defaultSize * 2,
+                  right: SizeConfig.defaultSize * 2),
               child: Form(
                 key: _formKey,
                 child: Column(
@@ -54,6 +58,7 @@ class _BMIViewState extends State<BMIView> {
                       hintText: 'Body Mass',
                       context: context,
                       color: kPrimaryColor,
+                      fontSize: SizeConfig.defaultSize * 2,
                       sufixText: 'kg',
                       controller: bodyMassController,
                       validator: (value) {
@@ -75,6 +80,7 @@ class _BMIViewState extends State<BMIView> {
                         hintText: 'Height',
                         context: context,
                         color: kPrimaryColor,
+                        fontSize: SizeConfig.defaultSize * 2,
                         sufixText: 'm',
                         controller: heightController,
                         validator: (value) {
@@ -94,7 +100,9 @@ class _BMIViewState extends State<BMIView> {
                     CustomElevatedButton.elevatedButtonText(
                         backgroundColor: kPrimaryColor,
                         text: 'Calculate',
+                        fontSize: SizeConfig.defaultSize * 1.8,
                         function: () {
+                          FocusScope.of(context).unfocus();
                           if (_formKey.currentState.validate()) {
                             bmiCalculationController.bodyMass =
                                 double.parse(bodyMassController.text);
